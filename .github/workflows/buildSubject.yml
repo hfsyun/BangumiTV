@@ -1,9 +1,9 @@
 name: Build Subject
 
-on:
-  schedule:
+on: [workflow_dispatch]
+  #schedule:
     # Run “at minute 0 past every 2nd hour.” (see https://crontab.guru)
-    - cron: '0 */2 * * *'
+   # - cron: '0 */2 * * *'
 
 jobs:
   build:
